@@ -56,13 +56,11 @@ class ProfilePage(ft.View):
                             width=128,
                             height=128,
                             shape=ft.BoxShape("circle"),
-                            # Define image for profile picture
-                            image_src="/profile.jpg",
-                            image_fit="cover",
+                            content=ft.Image(src="/profile.jpg", fit="cover"),
                             shadow=ft.BoxShadow(
                                 spread_radius=6,
                                 blur_radius=20,
-                                color=ft.colors.with_opacity(0.71, "black"),
+                                color=ft.Colors.with_opacity(0.71, "black"),
                             ),
                         ),
                         ft.Divider(height=10, color="transparent"),
